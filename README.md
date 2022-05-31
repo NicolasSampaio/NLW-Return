@@ -1,29 +1,54 @@
-// GET, POST, PUT, PATCH, DELETE
+## 💻 Aplicação Hospedada
 
-//GET = Buscar Informações de uma entidade
-//POST = Cadastrar Informações de uma entidade
-//PUT = Atualizar informações de uma entidade
-//PATCH = Atualizar uma informação de uma entidade
-//DELETE = Deletar uma entidade
+https://nlw-return-rosy-one.vercel.app/
 
-// #SOLID
+## 🧪 Tecnologias
 
-//1. Single Responsibility Principle
-//Cada classe tem uma responsabolidade única
+Esse projeto foi desenvolvido com as seguintes tecnologias:
 
-//2. Open/Closed Principle
-//As classes da aplicação devem ser abertas para extensão mas fechadas para modificação
+- [React]
+- [TypeScript]
+- [Tailwind]
+- [Axios]
 
-//3. Liskov Substitution Principle
-//Nós devemos poder substituir uma classe pai por uma herança dela e tudo continuar funcionando
+- [Node]
+- [Cors]
+- [Express]
+- [Jest]
+- [Prisma]
 
-//4. Interface Segregation Principle
-//Em vez de possuir todos os métodos, implementar as interfaces separadas
-//Impressora -> imprimir, escanear, digitalizar
-//class impressora implements MegaImpressora
+- [SQLite]
+- [PostgreSQL]
 
-//5. Dependecy Inversion Principle
-//
+- [Vercel]
+- [Railway]
 
-// SQLite
-// Prisma
+## 🚀 Como executar
+
+Para iniciá-lo, siga os passos abaixo:
+
+```bash
+##FRONT-END
+# Instalar as dependências
+$ npm install
+
+# Iniciar o projeto
+$ npm run dev
+
+##BACK-END
+# Instalar as dependências
+$ npm install
+
+# Iniciar o projeto
+$ npm run dev
+```
+
+O app estará disponível no seu browser pelo endereço http://localhost:3000.
+
+## 💻 Projeto
+
+Chat para reportar bugs encontrados no site.
+
+## Apresenta a possibilidade de escrever um texto e anexar uma imagem demonstrando o bug
+
+Feito com 💜 with Rocketseat 👋🏻
