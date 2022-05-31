@@ -1,3 +1,6 @@
+![Capturar](https://user-images.githubusercontent.com/42179041/171265011-ce3b19c6-ec93-423c-a51a-91d7dc1ec54d.PNG)
+
+
 ## 💻 Aplicação Hospedada
 
 https://nlw-return-rosy-one.vercel.app/
@@ -11,14 +14,17 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - [Tailwind]
 - [Axios]
 
+
 - [Node]
 - [Cors]
 - [Express]
 - [Jest]
 - [Prisma]
 
+
 - [SQLite]
 - [PostgreSQL]
+
 
 - [Vercel]
 - [Railway]
@@ -48,7 +54,7 @@ O app estará disponível no seu browser pelo endereço http://localhost:3000.
 ## 💻 Projeto
 
 Chat para reportar bugs encontrados no site.
-
-## Apresenta a possibilidade de escrever um texto e anexar uma imagem demonstrando o bug
+Nele é possível adicionar um texto descrevendo sobre o problema e anexar uma imagem.
+O responsável configurado irá receber um email com os problemas relatados.
 
 Feito com 💜 with Rocketseat 👋🏻
