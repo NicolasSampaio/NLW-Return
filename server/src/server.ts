@@ -3,12 +3,12 @@ import cors from "cors";
 import { routes } from "./routes";
 
 const app = express();
-app.use(cors());
-// app.use(
-//   cors({
-//     origin: "https://www.section.io",
-//   })
-// );
+// app.use(cors());
+app.use(
+  cors({
+    origin: "https://nlw-return-production-b195.up.railway.app",
+  })
+);
 app.use(express.json());
 app.use(routes);
 
