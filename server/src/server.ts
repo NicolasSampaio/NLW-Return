@@ -14,11 +14,22 @@ const rateLimit = require("express-rate-limit");
 // });
 
 const app = express();
-app.use(
-  cors({
-    origin: "https://nicolassampaioreturn.vercel.app",
-  })
-);
+
+app.use((req, res, next) => {
+  res.header(
+    "Access-Control-Allow-Methods",
+    "https://nicolassampaioreturn.vercel.app"
+  );
+  res.header("Access-Control-Allow-Methods", "POST");
+  app.use(cors());
+  next();
+});
+
+// app.use(
+//   cors({
+//     origin: "https://nicolassampaioreturn.vercel.app",
+//   })
+// );
 // app.use(cors());
 // app.use(apiRequestLimiter);
 app.use(express.json());
