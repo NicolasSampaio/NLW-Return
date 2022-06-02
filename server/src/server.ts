@@ -3,24 +3,24 @@ import cors from "cors";
 import { routes } from "./routes";
 
 const rateLimit = require("express-rate-limit");
-const apiRequestLimiter = rateLimit({
-  windowMs: 1 * 60 * 1000, // 1 minute
-  max: 2, // limit each IP to 2 requests per windowMs
-  handler: function (req: express.Request, res: express.Response) {
-    return res.status(429).json({
-      error: "You sent too many requests. Please wait a while then try again",
-    });
-  },
-});
+// const apiRequestLimiter = rateLimit({
+//   windowMs: 1 * 60 * 1000, // 1 minute
+//   max: 2, // limit each IP to 2 requests per windowMs
+//   handler: function (req: express.Request, res: express.Response) {
+//     return res.status(429).json({
+//       error: "You sent too many requests. Please wait a while then try again",
+//     });
+//   },
+// });
 
 const app = express();
-// app.use(
-//   cors({
-//     origin: "https://nlw-return-production-b195.up.railway.app",
-//   })
-// );
-app.use(cors());
-app.use(apiRequestLimiter);
+app.use(
+  cors({
+    origin: "https://nicolassampaioreturn.vercel.app",
+  })
+);
+// app.use(cors());
+// app.use(apiRequestLimiter);
 app.use(express.json());
 app.use(routes);
 
