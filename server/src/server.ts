@@ -27,7 +27,7 @@ const rateLimit = require("express-rate-limit");
 
 app.use(
   cors({
-    origin: "https://nlw-return-production-b195.up.railway.app",
+    origin: "https://nicolassampaioreturn.vercel.app",
     methods: ["POST"],
   })
 );
