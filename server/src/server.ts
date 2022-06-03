@@ -2,7 +2,9 @@ import express from "express";
 import cors from "cors";
 import { routes } from "./routes";
 
+const app = express();
 const rateLimit = require("express-rate-limit");
+
 // const apiRequestLimiter = rateLimit({
 //   windowMs: 1 * 60 * 1000, // 1 minute
 //   max: 2, // limit each IP to 2 requests per windowMs
@@ -13,17 +15,15 @@ const rateLimit = require("express-rate-limit");
 //   },
 // });
 
-const app = express();
-
-app.use((req, res, next) => {
-  res.header(
-    "Access-Control-Allow-Methods",
-    "https://nicolassampaioreturn.vercel.app"
-  );
-  res.header("Access-Control-Allow-Methods", "POST");
-  app.use(cors());
-  next();
-});
+// app.use((req, res, next) => {
+//   res.header(
+//     "Access-Control-Allow-Methods",
+//     "https://nicolassampaioreturn.vercel.app"
+//   );
+//   res.header("Access-Control-Allow-Methods", "POST");
+//   app.use(cors());
+//   next();
+// });
 
 // app.use(
 //   cors({
