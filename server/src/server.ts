@@ -25,11 +25,12 @@ const rateLimit = require("express-rate-limit");
 //   next();
 // });
 
-// app.use(
-//   cors({
-//     origin: "https://nicolassampaioreturn.vercel.app",
-//   })
-// );
+app.use(
+  cors({
+    origin: "https://nlw-return-production-b195.up.railway.app",
+    methods: ["POST"],
+  })
+);
 // app.use(cors());
 // app.use(apiRequestLimiter);
 app.use(express.json());
